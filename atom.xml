@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Matsukaze Syntax]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2015-05-31T08:51:44.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[electron first touch]]></title>
+    <link href="http://yoursite.com/2015/05/31/electron-atom-shell-%E8%A7%A6%E3%81%A3%E3%81%9F/"/>
+    <id>http://yoursite.com/2015/05/31/electron-atom-shell-触った/</id>
+    <published>2015-05-31T08:49:36.000Z</published>
+    <updated>2015-05-31T08:51:44.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="hello">hello</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v&#10;v0.12.1&#10;$ npm -v&#10;2.5.1&#10;$ npm install -g electron-prebuild@0.24.0&#10;  &#26368;&#26032;&#12398; @0.25.3 &#12391;&#12399;&#12456;&#12521;&#12540;&#25171;&#38283;&#12391;&#12365;&#12378;&#12290;&#65297;&#36913;&#38291;&#12372;&#12392;&#12395;&#26356;&#26032;&#12373;&#12428;&#12390;&#12427;&#12367;&#12425;&#12356;&#12384;&#12363;&#12425;&#28961;&#29702;&#12375;&#12394;&#12356;&#12290;&#10;$ npm init -y&#10;$ vi package.json&#10;  &#30330;&#28779;&#21517;&#12434; main.js &#12395;&#10;$ touch main.coffee&#10;  &#12499;&#12523;&#12489;&#12452;&#12531;&#12364;&#22810;&#12293;&#12354;&#12427;&#12398;&#12391;&#12289;&#12414;&#12378;&#12399;&#20351;&#12387;&#12390;&#12415;&#12394;&#12356;&#12392;&#12397;&#12290;&#10;  require &#34;app&#34; &#12375;&#12383;&#12418;&#12398;&#12395; app.on &#12391;&#12452;&#12505;&#12531;&#12488;&#12434;&#20181;&#36796;&#12435;&#12391;&#12356;&#12367;&#12290;&#20170;&#22238;&#12399; &#34;window-all-closed&#34; , &#34;ready&#34; &#12395;&#12290;ready &#12375;&#12383;&#12425; &#12454;&#12452;&#12531;&#12489;&#12454;&#12398;&#12452;&#12531;&#12473;&#12479;&#12531;&#12473;&#12434;&#20316;&#12427;&#12290;&#12371;&#12371;&#12395;&#22823;&#12365;&#12373;&#12420;&#12289;&#12473;&#12479;&#12540;&#12488;&#12398; html &#12420;&#32066;&#20102;&#12452;&#12505;&#12531;&#12488;&#12434;&#20181;&#36796;&#12416;&#12290;&#10;$ touch index.html&#10;  &#35501;&#12415;&#12371;&#12414;&#12379;&#12383;&#12356; html</span><br></pre></td></tr></table></figure>
+<h2 id="from_server">from server</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi index.html&#10;  [add] &#60;script src=&#34;./index.js&#34;&#62;&#60;/script&#62;</span><br></pre></td></tr></table></figure>
+<p>この index.js が node_module を介することができる。</p>
+<h2 id="minimum_fire">minimum fire</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm init&#10;$ vi index.coffee</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app = require &#34;app&#34;&#10;Win = require &#34;browser-window&#34;&#10;win = null&#10;&#10;app.on &#34;ready&#34;, () -&#62;&#10;  win = new Win&#10;    width: 300&#10;    height: 300&#10;  win.loadUrl &#34;file://#&#123;__dirname&#125;/index.html&#34;&#10;  win.on &#39;closed&#39;, () -&#62;&#10;    app.quit()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ echo &#39;&#60;h2&#62;Electron from server&#60;/h2&#62;&#39; &#62; index.html&#10;$ electron .</span><br></pre></td></tr></table></figure>
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/41326/bd900536-f825-4d3c-ef0d-6d28cb0747b8.png" alt="electron-minimum.png" title="electron-minimum.png"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="hello">hello</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td cl]]>
+    </summary>
+    
+      <category term="hexo helloworld" scheme="http://yoursite.com/tags/hexo-helloworld/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://yoursite.com/2015/05/31/hello-world/"/>
+    <id>http://yoursite.com/2015/05/31/hello-world/</id>
+    <published>2015-05-31T08:21:45.000Z</published>
+    <updated>2015-05-31T08:21:45.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
